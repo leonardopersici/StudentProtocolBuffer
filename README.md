@@ -8,6 +8,8 @@ https://ewserver.di.unimi.it/gitlab/riccardopresotto/setup_grpc.git
 
 * Otherwise, take care to import the project as a Gradle Project
 
+* If required, trust the project and accept the Gradle auto-import
+
 * Compile the .proto files: 
 	1. Select from the menu bar **Build** -> **Rebuild Project**
 	2. Check if some files have been generated in the directory *setup_grpc/build/generated/source/proto/main/java*
