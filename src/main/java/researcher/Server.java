@@ -1,6 +1,6 @@
 package researcher;
 
-import it.ewlab.researcher.ResearcherOuterClass.Researcher;
+import it.ewlab.researcher.StudentOuterClass;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -15,9 +15,9 @@ public class Server {
 
         Socket s = serverSocket.accept();
 
-        Researcher r = Researcher.parseFrom(s.getInputStream());
+        StudentOuterClass.Student st = StudentOuterClass.Student.parseFrom(s.getInputStream());
 
-        System.out.println(r);
+        System.out.println(st);
     }
 
 

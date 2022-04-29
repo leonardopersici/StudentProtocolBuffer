@@ -1,0 +1,22 @@
+package it.ewlab.researcher;
+
+message Student {
+    required string name = 1;
+    required string surname = 2;
+    required int32 yob = 3;
+
+    message PlaceOfResidence {
+        required string address = 1;
+        required string city = 2;
+        required string nation = 3;
+    }
+
+    message PassedExams {
+        required string examName = 1;
+        required int32 mark = 2;
+        required string date = 3;
+    }
+
+    required PlaceOfResidence placeOfResidence = 4;
+    repeated PassedExams passedExams = 5;
+}
